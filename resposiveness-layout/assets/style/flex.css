@@ -6,6 +6,29 @@
     column-gap: 33px;
 }
 
+.agenda__lista{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+    justify-content: center;
+}
+
+.agenda__item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.agenda__informacoes{
+    width: 50%;
+}   
+
+.agenda__atracao{
+    width: 50%;
+}
+
+
+
 @media (min-width: 720px) {
 
     .menu {
