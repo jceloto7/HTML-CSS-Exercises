@@ -17,6 +17,8 @@
 .agenda__item{
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
+    width: 100%;
 }
 
 .agenda__informacoes{
@@ -27,12 +29,22 @@
     width: 50%;
 }
 
+.agenda__botao{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 
 @media (min-width: 720px) {
 
     .menu {
         column-gap: 75px;
+    }
+
+    .agenda__lista{
+        justify-content: end;
     }
 }
 
@@ -61,6 +73,14 @@
 
     .menu__item:nth-child(5) {
         order: 2;
+    }
+
+    .agenda__informacoes{
+        width: 100%;
+    }   
+    
+    .agenda__atracao{
+        width: 100%;
     }
 
 }
