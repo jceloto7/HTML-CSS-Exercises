@@ -117,4 +117,19 @@
         order: 2;
     }
 
+    .agenda__item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .agenda__informacoes{
+        width: 100%;
+    }   
+    
+    .agenda__atracao{
+        width: 100%;
+    } 
+
 }
