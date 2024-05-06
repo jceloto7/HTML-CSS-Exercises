@@ -74,3 +74,36 @@
     }
 }
 
+@media(min-width:1440px){
+    .categorias{
+        display: grid;
+        grid-template-columns:calc(50% - 0.75rem);
+        grid-template-rows: 35px 65px 228px;
+        row-gap:1rem;
+        column-gap:1.5rem;
+        grid-template-areas: 
+            "categories-title categories-title"
+            "categories-item highlights-title"
+            "categories-item image";
+
+    }
+    .categorias h2{
+        grid-area: categories-title; 
+    }
+    
+    .categorias_item{
+        grid-area: categorias-item;
+    }
+
+    .destaques{
+        grid-area:highlights-title;
+    }
+
+    .categorias__imagem{
+        grid-area: image;
+    }
+
+
+    
+}
+
