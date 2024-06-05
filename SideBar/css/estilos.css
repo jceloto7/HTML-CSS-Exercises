@@ -269,3 +269,21 @@ iframe{
     }
 
 }
+
+#sidebar__line{
+    width: 216px;
+    height: 1px;
+    background: #144480;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#sidebar__container h2{
+    margin-bottom: 5px;
+    color: var(--Cinza-escuro, #222);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
