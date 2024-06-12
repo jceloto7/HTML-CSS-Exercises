@@ -1,0 +1,45 @@
+body{
+    box-sizing: border-box;
+    width: 80%;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
+h1{
+    margin:auto;
+    background-color: #9290C3 ;
+    color: #070F2B;
+    
+    text-align: center;
+    padding: 5px;
+    
+}
+
+h2{
+    padding: 5px;
+    background-color: #9290C3 ;
+    color: #070F2B;
+    border-bottom-style:solid;
+    border-bottom-color:#1B1A55;
+
+}
+
+h4{
+    font-weight: bold;
+}
+
+#profile{
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+ol li{
+    list-style-type: disc;
+}
+
+span{
+    color: #535C91;
+}
