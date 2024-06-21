@@ -1,0 +1,82 @@
+body{
+    background-color: aqua;
+    font-family: sans-serif;
+    list-style-type: none;
+    padding: 0;
+    height: 100vh;
+}
+
+#container{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+    h1{
+        margin: 0;
+        color: rgb(47, 49, 45);
+    }
+}
+
+.contactList{
+    display: flex;
+    flex-direction: column;
+    overflow-y:scroll;
+    width: 500px;
+    height: 380px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.contactList__item{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 20px 0 20px 15px;
+    list-style-type: none;
+    width: 100%;
+    border-bottom:solid 0.5px rgba(161, 160, 160, 0.3);
+    gap:30px;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.contactList__item:hover{
+    background-color: gray;
+}
+
+.profilePic{
+    width: 70px;
+    border-radius: 30px;
+    border: solid 2px rgb(161, 160, 160);
+}
+
+.profile{
+    h2{
+        margin: 0;
+        font-weight: 400;
+    }
+    p{
+        margin: 0;
+        opacity: 0.5;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    width: 270px;
+}
+
+.contactList__item .icons img{
+    opacity: 0;
+}
+
+.contactList__item:hover .icons img{
+    opacity: 1;
+    cursor: pointer;
+}
