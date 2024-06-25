@@ -3,15 +3,16 @@ body{
     font-family: sans-serif;
     list-style-type: none;
     padding: 0;
-    height: 100vh;
+   
 }
 
 #container{
-    padding: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
+    height: 100vh;
     
     h1{
         margin: 0;
@@ -30,6 +31,8 @@ body{
     text-align: center;
     background-color: black;
     box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow:0 2px 6px rgba(0,0,0,.2) ;
 }
 
 .contactList__item{
@@ -52,7 +55,7 @@ body{
 
 .profilePic{
     width: 70px;
-    border-radius: 30px;
+    border-radius: 50%;
     border: solid 2px rgb(161, 160, 160);
 }
 
