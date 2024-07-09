@@ -1,136 +1,115 @@
-:root{
-    font-family: sans-serif;
-    box-sizing: border-box;
+body {
+    background-color: #0c1014;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    max-width: 960px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body{
-    background-color: rgb(17, 17, 17);
-    width: 80%;
-    margin: auto;
+.choose-plan {
+    font-size: 62px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 46px 0;
 }
 
-.mainHeader{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    color: white;
-    padding: 32px;
-
-    h1{
-        text-transform: uppercase;
-        display: flex;
-        font-size: 24px;
-        letter-spacing: 3px;
-        font-weight: bold;
-    }
-        
+    background-color: #05080a;
+    padding: 16px;
 }
 
-.navigator{
+.header__logo {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    letter-spacing: 2px;
+}
+
+.header__navigator {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    gap: 16px;
+    list-style-type: none;
+    font-size: 18px;
 }
 
-.navItem{
+.header__navigator__link {
     color: white;
     text-decoration: none;
+    padding: 14px;
+    border-radius: 6px;
 }
 
-.highlight{
+.header__navigator__link:hover {
+    text-decoration: underline;
+}
+
+.header__navigator__link--active {
+    background-color: #cbe300;
+    color: #0c1014;
+    pointer-events: none;
+}
+
+.pricing {
+    display: flex;
+    gap: 16px;
+}
+
+.pricing-plan {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #1f262c;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px -6px black;
+}
+
+.pricing-plan__title {
+    text-transform: uppercase;
+    border-bottom: 2px solid #cbe300;
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.pricing-plan__price {
+    margin-top: 0;
+    font-size: 34px;
+}
+
+.pricing-plan__features {
+    margin: 0 0 35px;
+    color: #b5b5b5;
+    padding-left: 16px;
+    line-height: 1,8;
+    flex: 1;
+}
+
+.pricing-plan__features__item::marker{
+    color: #cbe300;
+}
+
+.pricing-plan__cta{
+    background-color: #cbe300;
+    padding: 16px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
     text-decoration: none;
-    background-color: yellow;
-    padding: 16px;
-    border-radius: 5px;
-    color: black;
-}
-
-.mainContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.chooseSignature{
-    color: white;
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.listContainer{
-    display: flex;
-    gap: 10px;
-}
-
-.listItem{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(49, 49, 49);
-    padding: 16px;
-    justify-content: space-between;
-}
-
-
-
-.listHeader{
-    h2{
-        color: white;
-        font-weight: bold;
-        font-size: 24px;
-        text-transform: uppercase;
-    }
-    
-
-    hr{
-        margin-bottom: 20px;
-        border: solid 1px yellow;
-    }
-
-
-}
-
-.price{
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
-    text-transform: uppercase;
-
-    span{
-        font-size: 14px;
-    }
-
-    margin-bottom: 10px;
-}
-
-.servicesContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.bullet {
-    font-size: 15px; 
-    color: yellow; 
-    margin-right: 5px; 
-}
-
-.serviceText{
-    color: rgb(192, 192, 192);
-    font-size: 14px;
-}
-
-.signIt{
-    background-color: yellow;
-    padding: 16px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-    width: 320px;
-    border-radius: 10px;
+    border-radius: 6px;
     border-color: yellow;
+    text-align: center;
+    color: #0c1014;
 }
+
+.pricing-plan__cta:hover{
+    outline: 2px solid #cbe300;
+    background-color: transparent;
+    color: white;
+}
+

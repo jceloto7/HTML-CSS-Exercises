@@ -1,111 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="jceloto7">
     <title>My Server</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
-<header class="mainHeader">
-    <h1>MyServer</h1>
-    <nav class="navigator">
-        <a href="#" class="navItem">Home</a>
-        <a href="#" class="highlight">Planos</a>
-        <a href="#" class="navItem">Suporte</a>
-        <a href="#" class="navItem">Contato</a>
-    </nav>
-</header>
+    <header class="header">
+        <div class="header__logo">MyServer</div>
+        <nav>
+            <ul class="header__navigator">
+                <li><a class="header__navigator__link" href="#">Home</a></li>
+                <li><a class="header__navigator__link header__navigator__link--active" href="#">Planos</a></li>
+                <li><a class="header__navigator__link"  href="#">Suporte</a></li>
+                <li><a class="header__navigator__link" href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main class="mainContainer">
-    <h2 class="chooseSignature">Escolha seu plano</h2>
-    <ul class="listContainer">
-        <li class="listItem">
-            <div class="teste">
-                <header class="listHeader">
-                    <h2>Essencial</h2>
-                    <hr class="line">  
-                </header>
-                <ul class="servicesContainer">
-                    <h2 class="price">R$3.95<span> / mês</span></h2>   
-                    <li class="services"> 
-                        <p class= "serviceText"> <span class="bullet">•</span> 1 Website</p>    
-                    </li>
-                    <li class="services">
-                        <p class ="serviceText"> <span class="bullet">•</span> 1GB de Armazenamento</p>
-                    </li>
-                    <li class="services">
-                        <p class="serviceText"><span class="bullet">•</span> 10GB de transferência</p>
-                    </li>               
+    <main>
+        <h1 class="choose-plan">Escolha seu plano</h1>
+        <section class="pricing">
+            <div class="pricing-plan">
+                <h2 class="pricing-plan__title">Essencial</h2>
+                <p class="pricing-plan__price">R$3.95<span class="princing-plan__span"> / mês</span></p>
+                <ul class="pricing-plan__features">
+                    <li class="pricing-plan__features__item">1 Website</li>
+                    <li class="pricing-plan__features__item">1 GB de armazenamento </li>
+                    <li class="pricing-plan__features__item">10 GB de transferência</li>
                 </ul>
+                <a href="#" class="pricing-plan__cta">Assine já</a>
             </div>
-            
-            <button class="signIt" type="button"><a href="#"></a>Assine já</button>          
-        </li>
-        
-        <li class="listItem">
-            <div class="teste">
-                <header class="listHeader">
-                    <h2>Premium</h2>
-                    <hr class="line">
-                        
-                </header>
-                <ul class="servicesContainer">
-                    <h2 class="price">R$7.95<span> / mês</span></h2>
-                    <li class="services">
-                        <p class= "serviceText"> <span class="bullet">•</span> 3 Websites</p>    
-                    </li>
-                    <li class="services">
-                        <p class ="serviceText"> <span class="bullet">•</span> 3GB de Armazenamento</p>
-                    </li>
-                    <li class="services">
-                        <p class="serviceText"><span class="bullet">•</span> Transferência ilimitada</p>
-                    </li>               
-                    <li class="services">
-                        <p class="serviceText"><span class="bullet">•</span> 10 horas de suporte mensais</p>
-                    </li>               
+            <div class="pricing-plan">
+                <h2 class="pricing-plan__title">Premium</h2>
+                <p class="pricing-plan__price">R$7.95<span class="princing-plan__span"> / mês</span></p>
+                <ul class="pricing-plan__features">
+                    <li class="pricing-plan__features__item">5 Websites</li>
+                    <li class="pricing-plan__features__item">3 GB de armazenamento </li>
+                    <li class="pricing-plan__features__item">Transferência ilimitada</li>
+                    <li class="pricing-plan__features__item">10 horas de suporte mensais</li>
                 </ul>
+                <a href="#" class="pricing-plan__cta">Assine já</a>
             </div>
-            
-            <button class="signIt" type="button"><a href="#"></a>Assine já</button>          
-        </li>
-        
-        <li class="listItem">
-            <div class="teste">
-                <header class="listHeader">
-                    <h2>Gold</h2>
-                    <hr class="line">
-                        
-                </header>
-                
-                <ul class="servicesContainer">
-                    <h2 class="price">R$13.95<span> / mês</span></h2> 
-                    
-                    <li class="services">
-                        <p class= "serviceText"> <span class="bullet">•</span> 10 Websites</p>    
-                    </li>
-                    <li class="services">
-                        <p class ="serviceText"> <span class="bullet">•</span> 30GB de Armazenamento</p>
-                    </li>
-                    <li class="services">
-                        <p class="serviceText"><span class="bullet">•</span> Transferência ilimitada</p>
-                    </li>               
-                    <li class="services">
-                        <p class="serviceText"><span class="bullet">•</span> 30 horas de suporte mensais</p>
-                    </li>               
-                    <li class="services">
-                        <p class="serviceText"><span class="bullet">•</span> Email personalizado</p>
-                    </li>               
+            <div class="pricing-plan">
+                <h2 class="pricing-plan__title">Gold</h2>
+                <p class="pricing-plan__price">R$13.95<span class="princing-plan__span"> / mês</span></p>
+                <ul class="pricing-plan__features">
+                    <li class="pricing-plan__features__item">10 Websites</li>
+                    <li class="pricing-plan__features__item">30 GB de armazenamento </li>
+                    <li class="pricing-plan__features__item">Transferência ilimitada</li>
+                    <li class="pricing-plan__features__item">30 horas de suporte mensais</li>
+                    <li class="pricing-plan__features__item">Email personalizado</li>
                 </ul>
+                <a href="#" class="pricing-plan__cta">Assine já</a>
             </div>
-            
-            <button class="signIt" type="button"><a href="#"></a>Assine já</button>          
-        </li>
-    </ul>
-
-</main>
-
-    
+        </section>
+    </main>
 </body>
+
 </html>
